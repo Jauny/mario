@@ -29,7 +29,7 @@ var mario = {
     for (var i = 0; i < platforms.length; i++) {
       var p = platforms[i];
       if (
-        p.x < this.x && p.x + p.width > this.x + this.width &&
+        p.x < this.x + this.width && p.x + p.width > this.x &&
         p.y < this.y && p.y + p.height > this.y &&
         this.vy > 0
       ) {
